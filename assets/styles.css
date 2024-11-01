@@ -14,6 +14,15 @@ body {
   background-color: #f4f4f9;
 }
 
+.video-container {
+  width: min(90%, 700px);
+  margin: 10px auto;
+}
+
+.video {
+  width: 100%;
+}
+
 .header {
   background-color: var(--my-color);
   /* background-image: url("/assets/images/blue-background.jpg"); */
@@ -117,6 +126,10 @@ body {
   max-width: 350px;
 }
 
+.section {
+ padding: 10px auto;
+}
+
 .section-title {
   margin-bottom: 30px;
   font-size: 25px;
@@ -134,6 +147,7 @@ body {
 .product-cards {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .card {
@@ -169,7 +183,7 @@ body {
   font-size: 17px;
 }
 
-.latest-model {
+.latest-model-content {
   background-color: #eef2f7;
   display: flex;
   justify-content: center;
@@ -183,7 +197,7 @@ body {
   margin-bottom: 100px;
 }
 
-.latest-model-image {
+.latest-model-content-image {
   width: min(500px, 50%);
 }
 
@@ -411,22 +425,27 @@ body {
     text-align: center;
     margin: 10px auto;
   }
+  .products {
+    width: 100%;
+    padding: 50px 10px;
+  }
   .product-cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .card {
     display: block;
     width: 90%;
     margin: 20px auto;
   }
-  .latest-model {
+  .latest-model-content {
     display: flex;
     flex-direction: column;
     padding: 15px;
     justify-content: center;
   }
-  .latest-model-image {
+  .latest-model-content-image {
     width: 80%;
     margin: 20px auto;
   }
@@ -454,7 +473,10 @@ body {
     padding: 20px;
   }
   .subscribe-btn {
-    width: 30%;
+    padding: 5%;
     margin: 10px auto;
+  }
+  .designer {
+    padding: 2%;
   }
 }
